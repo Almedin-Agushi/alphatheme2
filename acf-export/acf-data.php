@@ -60,9 +60,10 @@ acf_add_local_field_group(array(
 				'layout_64b105c645e48' => array(
 					'key' => 'layout_64b105c645e48',
 					'name' => 'banner_section',
-					'label' => 'Banner Section',
+					'label' => 'Banner Section', 
 					'display' => 'block',
 					'sub_fields' => array(
+						
 						array(
 							'key' => 'field_64b105e6ccbf2',
 							'label' => 'Title',
