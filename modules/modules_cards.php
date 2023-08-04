@@ -6,7 +6,6 @@
   $selected_pages = get_field('pages');
   $selected_services = get_field('related_services');
 
-
   if (get_row_layout() === 'modules_cards') {
     $relation_items = get_sub_field('post_type_select');
 
@@ -25,7 +24,7 @@
   }
 
 
-  
+
  
   if ($selected_pages) {
     foreach ($selected_pages as $page_id) {
