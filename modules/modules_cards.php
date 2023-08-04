@@ -1,11 +1,10 @@
-<h1>TEST </h1>
+<h1>Test </h1>
 
 <div class="cards-container">
   <?php
   $selected_businesses = get_field('businesses');
   $selected_pages = get_field('pages');
   $selected_services = get_field('related_services');
-
   if (get_row_layout() === 'modules_cards') {
     $relation_items = get_sub_field('post_type_select');
 
