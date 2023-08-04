@@ -21,14 +21,14 @@ acf_add_local_field_group(array(
             'layouts' => array(
 				'layout_64c0de69031d8' => array(
 					'key' => 'layout_64c0de69031d8',
-					'name' => 'cards',
-					'label' => 'Cards',
+					'name' => 'modules_cards',
+					'label' => 'Modules Cards',
 					'display' => 'block',
 					'sub_fields' => array(
 						array(
 							'key' => 'field_64c0e81ed137d',
 							'label' => 'Post Type',
-							'name' => 'post_type',
+							'name' => 'post_type_select',
 							'type' => 'button_group',
 							'instructions' => '',
 							'required' => 0,
@@ -39,8 +39,9 @@ acf_add_local_field_group(array(
 								'id' => '',
 							),
 							'choices' => array(
-								'businesses' => 'Businesses', 
-								'pages' => 'Pages', 
+								'businesses' => 'Businesses',
+								'pages' => 'Pages',
+								'services' => 'Services',
 							),
 							'allow_null' => 0,
 							'default_value' => '',
@@ -48,54 +49,68 @@ acf_add_local_field_group(array(
 							'return_format' => 'value',
 						),
 						array(
-							'key' => 'field_relationship',
-							'label' => 'Related Posts',
-							'name' => 'related_posts',
+							'key' => 'field_64cbc201caa74',
+							'label' => 'Pages',
+							'name' => 'pages',
 							'type' => 'relationship',
-							'instructions' => 'Select related posts',
-							'required' => 0,
-							'conditional_logic' => array( 
-								array(
-									array(
-										'field' => 'field_64c0e81ed137d', 
-										'operator' => '==',
-										'value' => 'businesses', 
-									),
-								),
-							),
-							'post_type' => array(
-								0 => 'bussines_post',
-							),
-							'filters' => array(
-								0 => 'search',
-								1 => 'post_type',
-							),
-							'return_format' => 'id',
-						),
-						array(
-							'key' => 'field_relationship_pages', 
-							'label' => 'Related Pages',
-							'name' => 'related_pages',
-							'type' => 'relationship',
-							'instructions' => 'Select related pages',
+							'instructions' => '',
 							'required' => 0,
 							'conditional_logic' => array(
 								array(
 									array(
-										'field' => 'field_64c0e81ed137d', 
+										'field' => 'field_64c0e81ed137d',
 										'operator' => '==',
-										'value' => 'pages', 
+										'value' => 'pages',
 									),
 								),
+							),
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
 							),
 							'post_type' => array(
 								0 => 'page',
 							),
+							'taxonomy' => '',
+							'filters' => '',
+							'elements' => '',
+							'min' => '',
+							'max' => '',
+							'return_format' => 'object',
+						),
+						array(
+							'key' => 'field_64cbc255ce0c5',
+							'label' => 'Businesses',
+							'name' => 'businesses_test',
+							'type' => 'relationship',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => array(
+								array(
+									array(
+										'field' => 'field_64c0e81ed137d',
+										'operator' => '==',
+										'value' => 'businesses',
+									),
+								),
+							),
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'post_type' => array(
+								0 => 'bussines_post',
+							),
+							'taxonomy' => '',
 							'filters' => array(
 								0 => 'search',
-								1 => 'post_type',
 							),
-							'return_format' => 'id',
+							'elements' => '',
+							'min' => '',
+							'max' => '',
+							'return_format' => 'object',
 						),
 					),
 					'min' => '',
