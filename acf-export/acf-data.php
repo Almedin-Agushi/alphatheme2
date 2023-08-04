@@ -63,7 +63,7 @@ acf_add_local_field_group(array(
 					'label' => 'Banner Section', 
 					'display' => 'block',
 					'sub_fields' => array(
-						
+
 						array(
 							'key' => 'field_64b105e6ccbf2',
 							'label' => 'Title',
@@ -130,7 +130,6 @@ acf_add_local_field_group(array(
 					'min' => '',
 					'max' => '',
 				),
-			
 				'layout_64c0de69031d8' => array(
 					'key' => 'layout_64c0de69031d8',
 					'name' => 'modules_cards',
